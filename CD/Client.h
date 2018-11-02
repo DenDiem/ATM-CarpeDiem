@@ -9,7 +9,7 @@ class CCardCD;
 class ClientCD
 {
 	ClientCD(string clName,string un,string pass);
-
+	~ClientCD();
 	CardCD& addCard();
 	CCardCD& addCreditCard();
 
@@ -23,6 +23,9 @@ private:
 	string _clientName;
 	string _username;
 	string password;
+
+	ClientCD(const ClientCD&);
+	const ClientCD& operator=(const ClientCD&);
 };
 
 
