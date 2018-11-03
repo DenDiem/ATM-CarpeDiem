@@ -12,7 +12,7 @@ class CardCD
 
 	unsigned amount();
 	const unsigned amount() const;
-
+	friend class ATM;
 private:
 	double _amount;
 	bool _credit;
