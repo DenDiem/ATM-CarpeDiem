@@ -5,6 +5,6 @@ public:
 	MoneyCD(void);
 	~MoneyCD(void);
 private:
-	unsigned _
+	unsigned _quantity;
 };
 
