@@ -2,12 +2,13 @@
 #ifndef _CardCD_H_
 #define _CardCD_H_
 
-#include <string>
+#include <iostream>
 using namespace std;
+#include <string>
 
 class CardCD
 {
-	CardCD(unsigned amount=0,string un,string cardnumber);
+	CardCD(unsigned amount,string un,string cardnumber);
 
 	unsigned amount();
 	const unsigned amount() const;
