@@ -3,6 +3,8 @@
 #include <iostream>
 using namespace std;
 #include <string>
+#include "CardCD.h"
+
 class MoneyCD;
 class ATM
 {
@@ -10,9 +12,10 @@ public:
 	ATM();
 	ATM(MoneyCD&);
 	~ATM();
-	bool IsCardValid();
+	friend class CardCD ;
+	bool IsCardValid(const CardCD& card, string cardnumber);
 	void chooseLanguage();
-	bool checkPassword();
+	bool checkPassword(const CardCD& card, string password);
 	void chooseOperation();
 	void showBalance();
 	void withdrawMoney();
@@ -20,9 +23,9 @@ public:
 	void chooseQuantityOfMoneyToWithdraw();
 	void additionalServices();
 
+
 private:
 	unsigned int _idOfATM;
 	string _address;
-
-	MoneyCD* _money;
+    MoneyCD* _money;
 };
