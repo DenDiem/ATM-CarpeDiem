@@ -16,3 +16,13 @@ ATM::~ATM(void)
 {
 	delete _money;
 }
+
+bool ATM::checkPassword(const CardCD& card, string password)
+{
+	return card->_password == password;
+}
+
+bool ATM::IsCardValid(const CardCD& card, string cardnumber)
+{
+	return card.cardnumber = cardnumber;
+}
