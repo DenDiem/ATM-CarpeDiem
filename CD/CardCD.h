@@ -13,13 +13,12 @@ class CardCD
 	unsigned amount();
 	const unsigned amount() const;
 
-
-
 private:
 	double _amount;
 	bool _credit;
 	string _username;
 	string _cardnumber;
+	string _password;
 };
 
 #endif
