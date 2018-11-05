@@ -8,17 +8,23 @@ using namespace std;
 
 class CardCD
 {
-	CardCD(unsigned amount,string un,string cardnumber);
+	CardCD(string cardnumber,string pin);
+	bool isCredit() const;
+	double& amount();
+	const double& amount() const;
 
-	unsigned amount();
-	const unsigned amount() const;
-	friend class ATM;
+	const string& pin() const;
+	string& pin();
+	const string& cardnum() const;
+	string& cardnum();
+
+
 private:
 	double _amount;
 	bool _credit;
-	string _username;
 	string _cardnumber;
-	string _password;
+	string _pin;
 };
+
 
 #endif

@@ -77,11 +77,17 @@
     <ClInclude Include="ATM.h" />
     <ClInclude Include="CardCD.h" />
     <ClInclude Include="Client.h" />
+    <ClInclude Include="dbCD.h" />
     <ClInclude Include="MoneyCD.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ATM.cpp" />
+    <ClCompile Include="CardCD.cpp" />
+    <ClCompile Include="dbCD.cpp" />
     <ClCompile Include="MoneyCD.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ATM">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAgAAAAAAAAAIBAAAgAAAAAQAAQAAAAAAABBMgAQgg=</HashCode>
+      <FileName>ATM.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardCD">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAgAAAAAAAAAIgAAAAACAIgAAAgAAAAABAAAAAAAA=</HashCode>
+      <FileName>CardCD.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientCD">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAQAAAAAAAAABAAAAAAAAAQAIgAgAAACA=</HashCode>
+      <FileName>Client.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dbCD" Collapsed="true">
+    <Position X="4.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAABAAAAAAAIgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dbCD.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoneyCD">
+    <Position X="9.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIgEAAEAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>MoneyCD.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -23,9 +23,13 @@ public:
 	void chooseQuantityOfMoneyToWithdraw();
 	void additionalServices();
 
+	void runATM();
 
 private:
 	unsigned int _idOfATM;
 	string _address;
-        MoneyCD* _money;
+    MoneyCD* _money;
+	bool _access;
 };
+
+

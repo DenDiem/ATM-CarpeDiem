@@ -1,4 +1,6 @@
 #include "ATM.h"
+#include "MoneyCD.h"
+#include "dbCD.h"
 //create by Denys Baranov 02/11/18
 
 ATM::ATM(void):
@@ -19,7 +21,7 @@ ATM::~ATM(void)
 
 bool ATM::checkPassword(const CardCD& card, string password)
 {
-	return card._password == password;
+	return card.pin() == password;
 }
 
 bool ATM::IsCardValid(const CardCD& card, string cardnumber)
@@ -48,4 +50,21 @@ void ATM::printCheque(const CardCD& card, unsigned int amount)
 	cout << "You had: " << card._amount << endl;
 	cout << "You withdraw: " <<amount<< endl;
 	cout << "Now your amount:" << card._amount - amount<< endl;
+}
+
+void ATM::runATM()
+{
+	string a;
+	dbCD db(new CardCD("2","3"));
+
+	string pin;
+	cout<<"Enter card num:" << endl;
+	cin>>a;
+	cout<<"Enter pin: "<<endl;
+	cin>>pin;
+	if(db.checkValide(a,pin))
+	{
+
+		
+	}
 }
