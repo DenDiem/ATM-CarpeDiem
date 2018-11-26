@@ -1,0 +1,8 @@
+﻿  ATM.cpp
+ATM.obj : error LNK2001: неразрешенный внешний символ "_mysql_store_result@4"
+ATM.obj : error LNK2001: неразрешенный внешний символ "_mysql_real_connect@32"
+ATM.obj : error LNK2001: неразрешенный внешний символ "_mysql_query@8"
+ATM.obj : error LNK2001: неразрешенный внешний символ "_mysql_fetch_row@4"
+ATM.obj : error LNK2001: неразрешенный внешний символ "_mysql_init@4"
+ATM.obj : error LNK2001: неразрешенный внешний символ "_mysql_error@4"
+C:\Users\Den\Documents\ATM-CarpeDiem\CD\Release\CD.exe : fatal error LNK1120: неразрешенных внешних элементов: 6

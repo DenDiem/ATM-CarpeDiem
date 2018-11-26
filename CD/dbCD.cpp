@@ -14,4 +14,5 @@ dbCD::~dbCD(void)
 
 bool dbCD::checkValide(string cardnum, string pin)
 {
+	return true;
 }
