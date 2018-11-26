@@ -10,10 +10,11 @@ class Amount
     unsigned _m200;
     unsigned _m500;
 
-    Amount(const Amount&);
-    Amount& operator=(const Amount&);
     public:
     Amount(const unsigned m50 = 0, const unsigned m100 = 0, const unsigned m200 = 0, const unsigned m500 = 0);
+
+    Amount(const Amount&);
+    Amount& operator=(const Amount&);
     ~Amount();
     unsigned& m50(){return _m50;}
     unsigned& m100(){return _m100;}

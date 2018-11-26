@@ -53,6 +53,7 @@ const UserATM &UserATM::operator=(const UserATM & u)
     attempts()= (u.attempts());
     avalible() =(u.avalible());
     pass()= (u.pass());
+    return *this;
 }
 
 UserATM::~UserATM()

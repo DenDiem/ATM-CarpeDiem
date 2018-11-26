@@ -11,6 +11,23 @@ Amount::Amount(const unsigned m50, const unsigned m100, const unsigned m200, con
     return;
 }
 
+Amount::Amount(const Amount & a):
+    _m50(a.m50()),
+    _m100(a.m100()),
+    _m200(a.m200()),
+    _m500(a.m500())
+{
+
+}
+
+Amount &Amount::operator=(const Amount & a)
+{
+    m50()=(a.m50());
+    m100() =(a.m100());
+    m200() = (a.m200());
+    m500()= (a.m500());
+}
+
 Amount::~Amount()
 {
 

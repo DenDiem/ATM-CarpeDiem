@@ -8,22 +8,23 @@ class CarpeDiemATM
     unsigned _atmID;
     QString _address;
     Amount _amount;
-    const CarpeDiemATM& operator=(const CarpeDiemATM&);
-      CarpeDiemATM(const CarpeDiemATM&);//copy
+
 
      public:
         CarpeDiemATM(const QString &atmID="test"); //take date from db (SQL query) by _atmID and create class
-
+        const CarpeDiemATM& operator=(const CarpeDiemATM&);
+          CarpeDiemATM(const CarpeDiemATM&);//copy
         ~CarpeDiemATM();
 
         //selector-modifier
         Amount& amount();
         QString& address();
+        unsigned& atmID(){return _atmID;}
 
         //selector
-        const Amount& currentCash() const;
+        const Amount& amount() const;
         const QString& address() const;
-
+        const unsigned & atmID() const{return _atmID;}
 
         //functions
         void updateATM(); //update ATM, use mySql query
@@ -31,6 +32,7 @@ class CarpeDiemATM
 
 
 
+        static CarpeDiemATM currentATM;
 
 };
 #endif // CARPEDIEMATM_H

@@ -13,10 +13,16 @@ class GetCash : public QDialog
 
 public:
     explicit GetCash(QWidget *parent = 0);
+    void getCashWork(unsigned cs0);
     ~GetCash();
 
 private:
     Ui::GetCash *ui;
+    unsigned getCash;
+    unsigned m50;
+    unsigned m100;
+    unsigned m200;
+    unsigned m500;
 };
 
 #endif // GETCASH_H
