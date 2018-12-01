@@ -42,3 +42,10 @@ void OperationWindow::on_pushButton_clicked()
 
 
 }
+
+void OperationWindow::on_pushButton_4_clicked()
+{
+    hide();
+  //  gc = new History();
+   // gc->show();
+}
