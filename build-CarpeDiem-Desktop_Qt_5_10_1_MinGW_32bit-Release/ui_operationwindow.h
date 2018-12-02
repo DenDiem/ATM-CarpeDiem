@@ -158,7 +158,7 @@ public:
         pushButton_3->setText(QApplication::translate("OperationWindow", "PushButton", nullptr));
         pushButton_6->setText(QApplication::translate("OperationWindow", "PushButton", nullptr));
         pushButton_5->setText(QApplication::translate("OperationWindow", "PushButton", nullptr));
-        pushButton_4->setText(QApplication::translate("OperationWindow", "sad", nullptr));
+        pushButton_4->setText(QApplication::translate("OperationWindow", "History", nullptr));
         groupBox->setTitle(QApplication::translate("OperationWindow", "Profile", nullptr));
         lBalance->setText(QApplication::translate("OperationWindow", "[balance]", nullptr));
         label_2->setText(QApplication::translate("OperationWindow", "Welcome:", nullptr));

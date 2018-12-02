@@ -17,13 +17,14 @@ class History : public QDialog
 public:
     explicit History(QWidget *parent = 0);
     ~History();
-    History();
 
     //selector
 
+    const UserATM& user() const;
     const QDateTime& date() const;
     const QString& address() const;
 
+    UserATM& user();
     QDateTime& date();
     QString& address();
 

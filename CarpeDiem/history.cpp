@@ -7,12 +7,9 @@ History::History(QWidget *parent) :
     ui(new Ui::History)
 {
     ui->setupUi(this);
-}
-
-History::History(){
     QSqlQuery msql;
-    msql.exec("SELECT * FROM journalatm WHERE  userID = '"+QString::number(UserATM.currentUser.userID())+"'");
-  //  msql.first();
+    msql.exec("SELECT * FROM journalatm WHERE  userID = '"+QString::number(UserATM::currentUser.userID())+"'");
+    msql.first();
     if(msql.size()==0)
     {
 

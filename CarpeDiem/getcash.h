@@ -12,7 +12,7 @@ class GetCash : public QDialog
     Q_OBJECT
 
 public:
-    explicit GetCash(QWidget *parent = 0);
+    explicit GetCash(QWidget *parent = 0, unsigned gc = 0);
     void getCashWork(unsigned cs0);
     ~GetCash();
 
