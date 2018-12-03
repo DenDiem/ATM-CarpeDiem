@@ -41,30 +41,22 @@
          </sizepolicy>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 224, 226);</string>
+         <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(0, 255, 0);
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="maxLength">
+         <number>4</number>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
      </layout>
-    </widget>
-   </item>
-   <item row="2" column="0" colspan="3" alignment="Qt::AlignHCenter">
-    <widget class="QLabel" name="lError">
-     <property name="font">
-      <font>
-       <family>Palatino Linotype</family>
-       <pointsize>18</pointsize>
-       <weight>50</weight>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 0, 0);</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
     </widget>
    </item>
    <item row="4" column="1">
@@ -77,9 +69,9 @@
      </property>
      <layout class="QGridLayout" name="gridLayout">
       <item row="3" column="1">
-       <widget class="QPushButton" name="pushButton_9">
+       <widget class="QPushButton" name="btn_8">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(238, 0, 104);
+         <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;background-color: rgb(238, 0, 104);
 color: rgb(247, 222, 246);</string>
         </property>
         <property name="text">
@@ -88,9 +80,9 @@ color: rgb(247, 222, 246);</string>
        </widget>
       </item>
       <item row="2" column="1">
-       <widget class="QPushButton" name="pushButton_6">
+       <widget class="QPushButton" name="btn_5">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(238, 0, 104);
+         <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;background-color: rgb(238, 0, 104);
 color: rgb(247, 222, 246);</string>
         </property>
         <property name="text">
@@ -99,9 +91,9 @@ color: rgb(247, 222, 246);</string>
        </widget>
       </item>
       <item row="2" column="0">
-       <widget class="QPushButton" name="pushButton_5">
+       <widget class="QPushButton" name="btn_4">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(238, 0, 104);
+         <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;background-color: rgb(238, 0, 104);
 color: rgb(247, 222, 246);</string>
         </property>
         <property name="text">
@@ -110,9 +102,9 @@ color: rgb(247, 222, 246);</string>
        </widget>
       </item>
       <item row="2" column="2">
-       <widget class="QPushButton" name="pushButton_7">
+       <widget class="QPushButton" name="btn_6">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(238, 0, 104);
+         <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;background-color: rgb(238, 0, 104);
 color: rgb(247, 222, 246);</string>
         </property>
         <property name="text">
@@ -121,10 +113,11 @@ color: rgb(247, 222, 246);</string>
        </widget>
       </item>
       <item row="1" column="2">
-       <widget class="QPushButton" name="pushButton_4">
+       <widget class="QPushButton" name="btn_3">
         <property name="styleSheet">
          <string notr="true">background-color: rgb(238, 0, 104);
-color: rgb(247, 222, 246);</string>
+color: rgb(247, 222, 246);
+font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
         <property name="text">
          <string>3</string>
@@ -132,10 +125,11 @@ color: rgb(247, 222, 246);</string>
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="btn_2">
         <property name="styleSheet">
          <string notr="true">background-color: rgb(238, 0, 104);
-color: rgb(247, 222, 246);</string>
+color: rgb(247, 222, 246);
+font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
         <property name="text">
          <string>2</string>
@@ -143,9 +137,9 @@ color: rgb(247, 222, 246);</string>
        </widget>
       </item>
       <item row="3" column="0">
-       <widget class="QPushButton" name="pushButton_8">
+       <widget class="QPushButton" name="btn_7">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(238, 0, 104);
+         <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;background-color: rgb(238, 0, 104);
 color: rgb(247, 222, 246);</string>
         </property>
         <property name="text">
@@ -154,10 +148,11 @@ color: rgb(247, 222, 246);</string>
        </widget>
       </item>
       <item row="1" column="0">
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="btn_1">
         <property name="styleSheet">
          <string notr="true">background-color: rgb(238, 0, 104);
-color: rgb(247, 222, 246);</string>
+color: rgb(247, 222, 246);
+font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
         <property name="text">
          <string>1</string>
@@ -165,9 +160,9 @@ color: rgb(247, 222, 246);</string>
        </widget>
       </item>
       <item row="3" column="2">
-       <widget class="QPushButton" name="pushButton_10">
+       <widget class="QPushButton" name="btn_9">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(238, 0, 104);
+         <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;background-color: rgb(238, 0, 104);
 color: rgb(247, 222, 246);</string>
         </property>
         <property name="text">
@@ -176,9 +171,9 @@ color: rgb(247, 222, 246);</string>
        </widget>
       </item>
       <item row="4" column="1">
-       <widget class="QPushButton" name="pushButton_11">
+       <widget class="QPushButton" name="btn_0">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(238, 0, 104);
+         <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;background-color: rgb(238, 0, 104);
 color: rgb(247, 222, 246);</string>
         </property>
         <property name="text">
@@ -187,9 +182,9 @@ color: rgb(247, 222, 246);</string>
        </widget>
       </item>
       <item row="4" column="2">
-       <widget class="QPushButton" name="pushButton_12">
+       <widget class="QPushButton" name="btn_del">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(238, 0, 104);
+         <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;background-color: rgb(238, 0, 104);
 color: rgb(247, 222, 246);</string>
         </property>
         <property name="text">
@@ -206,33 +201,50 @@ color: rgb(247, 222, 246);</string>
          </sizepolicy>
         </property>
         <property name="styleSheet">
-         <string notr="true">
-color: rgb(247, 222, 246);
-background-color: rgb(0, 0, 0);</string>
+         <string notr="true">color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
         <property name="text">
          <string>Enter</string>
         </property>
        </widget>
       </item>
+      <item row="4" column="3">
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Return</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </widget>
    </item>
-   <item row="4" column="0">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+   <item row="5" column="0" colspan="3">
+    <widget class="QLabel" name="lError">
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+       <weight>9</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
      </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::Minimum</enum>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(0, 255, 0);
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>200</width>
-       <height>20</height>
-      </size>
+     <property name="text">
+      <string/>
      </property>
-    </spacer>
+    </widget>
    </item>
    <item row="4" column="2">
     <spacer name="horizontalSpacer_2">
@@ -250,7 +262,7 @@ background-color: rgb(0, 0, 0);</string>
      </property>
     </spacer>
    </item>
-   <item row="5" column="1">
+   <item row="2" column="1">
     <spacer name="verticalSpacer_2">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
@@ -262,6 +274,22 @@ background-color: rgb(0, 0, 0);</string>
       <size>
        <width>20</width>
        <height>70</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Minimum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>200</width>
+       <height>20</height>
       </size>
      </property>
     </spacer>

@@ -200,7 +200,7 @@ public:
 
 };
 
-namespace Ui {
+namespResultGet {
     class result: public Ui_result {};
 } // namespace Ui
 

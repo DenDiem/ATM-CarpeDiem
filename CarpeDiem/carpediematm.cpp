@@ -19,11 +19,12 @@ CarpeDiemATM::CarpeDiemATM(const unsigned int& atmID)
     }else
     {
 
+
         address() =  msql.value("address").toString();
         _atmID = msql.value("atmID").toUInt();
         amount() = Amount(msql.value("m50").toInt(), msql.value("m100").toInt(),msql.value("m200").toInt(),msql.value("m500").toInt());
 
-
+        qDebug((QString::number(amount().allMoney())).toLatin1());
     }
 
 }

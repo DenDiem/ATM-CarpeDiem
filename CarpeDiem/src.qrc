@@ -1,3 +1,6 @@
 <RCC>
     <qresource prefix="/new/img"/>
+    <qresource prefix="/">
+        <file>../../../Desktop/haskell/bf2e5df686830e0019abdee6ecf8714d.png</file>
+    </qresource>
 </RCC>

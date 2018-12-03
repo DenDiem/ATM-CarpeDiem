@@ -5,7 +5,7 @@
 #include <QDateTime>
 #include "useratm.h"
 #include "carpediematm.h"
-
+class OperationWindow;
 namespace Ui {
 class History;
 }
@@ -18,23 +18,19 @@ public:
     explicit History(QWidget *parent = 0);
     ~History();
 
-    //selector
 
-    const UserATM& user() const;
-    const QDateTime& date() const;
-    const QString& address() const;
 
-    UserATM& user();
-    QDateTime& date();
-    QString& address();
+private slots:
+    void on_pushButton_27_clicked();
 
 private:
     Ui::History *ui;
 
-    UserATM _user;
-    QDateTime _date;
-    QString _address;
-    CarpeDiemATM _ATM;
+    OperationWindow *_op;
+
+
+
+
 
 };
 

@@ -26,6 +26,8 @@ Amount &Amount::operator=(const Amount & a)
     m100() =(a.m100());
     m200() = (a.m200());
     m500()= (a.m500());
+
+    return *this;
 }
 
 Amount::~Amount()

@@ -29,9 +29,7 @@ public:
     QGridLayout *gridLayout;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
     QPushButton *pushButton_6;
-    QPushButton *pushButton_5;
     QPushButton *pushButton_4;
     QGroupBox *groupBox;
     QGridLayout *gridLayout_2;
@@ -50,7 +48,7 @@ public:
         OperationWindow->setStyleSheet(QStringLiteral("background-color: rgb(11, 58, 151);"));
         boxOp = new QGroupBox(OperationWindow);
         boxOp->setObjectName(QStringLiteral("boxOp"));
-        boxOp->setGeometry(QRect(260, 220, 341, 191));
+        boxOp->setGeometry(QRect(190, 220, 411, 201));
         boxOp->setStyleSheet(QLatin1String("\n"
 "color: rgb(246, 255, 255);"));
         gridLayout = new QGridLayout(boxOp);
@@ -58,85 +56,72 @@ public:
         pushButton = new QPushButton(boxOp);
         pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setStyleSheet(QLatin1String("background-color: rgb(1, 174, 238);\n"
-"color: rgb(246, 255, 255);"));
+"color: rgb(246, 255, 255);\n"
+"font: 75 18pt \"MS Shell Dlg 2\";"));
 
         gridLayout->addWidget(pushButton, 0, 0, 1, 1);
 
         pushButton_2 = new QPushButton(boxOp);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setStyleSheet(QLatin1String("background-color: rgb(1, 174, 238);\n"
+        pushButton_2->setStyleSheet(QLatin1String("font: 75 18pt \"MS Shell Dlg 2\";background-color: rgb(1, 174, 238);\n"
 "color: rgb(246, 255, 255);"));
 
         gridLayout->addWidget(pushButton_2, 0, 1, 1, 1);
 
-        pushButton_3 = new QPushButton(boxOp);
-        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setStyleSheet(QLatin1String("background-color: rgb(1, 174, 238);\n"
-"color: rgb(246, 255, 255);"));
-
-        gridLayout->addWidget(pushButton_3, 0, 2, 1, 1);
-
         pushButton_6 = new QPushButton(boxOp);
         pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
-        pushButton_6->setStyleSheet(QLatin1String("background-color: rgb(1, 174, 238);\n"
+        pushButton_6->setStyleSheet(QLatin1String("font: 75 18pt \"MS Shell Dlg 2\";background-color: rgb(1, 174, 238);\n"
 "color: rgb(246, 255, 255);"));
 
         gridLayout->addWidget(pushButton_6, 1, 2, 1, 1);
 
-        pushButton_5 = new QPushButton(boxOp);
-        pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
-        pushButton_5->setStyleSheet(QLatin1String("background-color: rgb(1, 174, 238);\n"
-"color: rgb(246, 255, 255);"));
-
-        gridLayout->addWidget(pushButton_5, 1, 1, 1, 1);
-
         pushButton_4 = new QPushButton(boxOp);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-        pushButton_4->setStyleSheet(QLatin1String("background-color: rgb(1, 174, 238);\n"
+        pushButton_4->setStyleSheet(QLatin1String("font: 75 18pt \"MS Shell Dlg 2\";background-color: rgb(1, 174, 238);\n"
 "color: rgb(246, 255, 255);"));
 
-        gridLayout->addWidget(pushButton_4, 1, 0, 1, 1);
+        gridLayout->addWidget(pushButton_4, 0, 2, 1, 1);
 
         groupBox = new QGroupBox(OperationWindow);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(20, 40, 201, 161));
+        groupBox->setGeometry(QRect(20, 40, 521, 171));
         groupBox->setStyleSheet(QLatin1String("\n"
 "color: rgb(246, 255, 255);"));
         gridLayout_2 = new QGridLayout(groupBox);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
         lBalance = new QLabel(groupBox);
         lBalance->setObjectName(QStringLiteral("lBalance"));
-        lBalance->setStyleSheet(QStringLiteral("color:rgb(144, 255, 103)"));
+        lBalance->setStyleSheet(QStringLiteral("font: 75 18pt \"MS Shell Dlg 2\";color:rgb(144, 255, 103)"));
 
         gridLayout_2->addWidget(lBalance, 1, 1, 1, 1);
 
         label_2 = new QLabel(groupBox);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setStyleSheet(QStringLiteral("color: rgb(246, 255, 255);"));
+        label_2->setStyleSheet(QStringLiteral("font: 75 18pt \"MS Shell Dlg 2\";color: rgb(246, 255, 255);"));
 
         gridLayout_2->addWidget(label_2, 0, 0, 1, 1);
 
         label_4 = new QLabel(groupBox);
         label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setStyleSheet(QStringLiteral("color: rgb(246, 255, 255);"));
+        label_4->setStyleSheet(QStringLiteral("font: 75 18pt \"MS Shell Dlg 2\";color: rgb(246, 255, 255);"));
 
         gridLayout_2->addWidget(label_4, 1, 0, 1, 1);
 
         lName = new QLabel(groupBox);
         lName->setObjectName(QStringLiteral("lName"));
-        lName->setStyleSheet(QStringLiteral("color: rgb(246, 255, 255);"));
+        lName->setStyleSheet(QStringLiteral("font: 75 18pt \"MS Shell Dlg 2\";color: rgb(246, 255, 255);"));
 
         gridLayout_2->addWidget(lName, 0, 1, 1, 1);
 
         label_6 = new QLabel(groupBox);
         label_6->setObjectName(QStringLiteral("label_6"));
-        label_6->setStyleSheet(QStringLiteral("color: rgb(246, 255, 255);"));
+        label_6->setStyleSheet(QStringLiteral("font: 75 18pt \"MS Shell Dlg 2\";color: rgb(246, 255, 255);"));
 
         gridLayout_2->addWidget(label_6, 2, 0, 1, 1);
 
         lCredit = new QLabel(groupBox);
         lCredit->setObjectName(QStringLiteral("lCredit"));
-        lCredit->setStyleSheet(QStringLiteral("color: rgb(246, 255, 255);"));
+        lCredit->setStyleSheet(QStringLiteral("font: 75 18pt \"MS Shell Dlg 2\";color: rgb(246, 255, 255);"));
 
         gridLayout_2->addWidget(lCredit, 2, 1, 1, 1);
 
@@ -154,10 +139,8 @@ public:
         OperationWindow->setWindowTitle(QApplication::translate("OperationWindow", "Dialog", nullptr));
         boxOp->setTitle(QApplication::translate("OperationWindow", "Operations", nullptr));
         pushButton->setText(QApplication::translate("OperationWindow", "Get Cash", nullptr));
-        pushButton_2->setText(QApplication::translate("OperationWindow", "PushButton", nullptr));
-        pushButton_3->setText(QApplication::translate("OperationWindow", "PushButton", nullptr));
-        pushButton_6->setText(QApplication::translate("OperationWindow", "PushButton", nullptr));
-        pushButton_5->setText(QApplication::translate("OperationWindow", "PushButton", nullptr));
+        pushButton_2->setText(QApplication::translate("OperationWindow", "Send Cash", nullptr));
+        pushButton_6->setText(QApplication::translate("OperationWindow", "Exit", nullptr));
         pushButton_4->setText(QApplication::translate("OperationWindow", "History", nullptr));
         groupBox->setTitle(QApplication::translate("OperationWindow", "Profile", nullptr));
         lBalance->setText(QApplication::translate("OperationWindow", "[balance]", nullptr));

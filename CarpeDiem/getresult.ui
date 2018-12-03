@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>result</class>
- <widget class="QDialog" name="result">
+ <class>GetResult</class>
+ <widget class="QDialog" name="GetResult">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -16,40 +16,8 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(11, 58, 151);</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <item row="1" column="2">
-    <widget class="QPushButton" name="pushButton_3">
-     <property name="font">
-      <font>
-       <pointsize>20</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(1, 174, 238);
-color: rgb(246, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>Exit</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="2">
-    <widget class="QPushButton" name="pushButton_2">
-     <property name="font">
-      <font>
-       <pointsize>20</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(1, 174, 238);
-color: rgb(246, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>Return</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="0" rowspan="2">
+  <layout class="QFormLayout" name="formLayout_2">
+   <item row="0" column="0">
     <widget class="QGroupBox" name="groupBox">
      <property name="styleSheet">
       <string notr="true">color: rgb(246, 255, 255);</string>
@@ -272,8 +240,50 @@ color: rgb(246, 255, 255);</string>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>40</width>
-       <height>20</height>
+       <width>360</width>
+       <height>312</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(1, 174, 238);
+color: rgb(246, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
       </size>
      </property>
     </spacer>

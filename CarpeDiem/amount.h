@@ -26,6 +26,8 @@ class Amount
     const unsigned& m200() const{return _m200;}
     const unsigned& m500() const{return _m500;}
 
+    unsigned allMoney(){return _m50*50+_m100*100+_m200*200+_m500*500;}
+
 
 };
 #endif // AMOUNT_H

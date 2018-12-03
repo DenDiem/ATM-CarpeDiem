@@ -15,45 +15,42 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLabel>
-#include <QtWidgets/QListWidget>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableView>
+#include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_History
 {
 public:
-    QLabel *label;
-    QLabel *label_2;
-    QLabel *label_3;
-    QListWidget *listWidget;
-    QListWidget *listWidget_2;
-    QListWidget *listWidget_3;
+    QVBoxLayout *verticalLayout;
+    QTableView *tableHistory;
+    QPushButton *pushButton_27;
 
     void setupUi(QDialog *History)
     {
         if (History->objectName().isEmpty())
             History->setObjectName(QStringLiteral("History"));
-        History->resize(640, 480);
+        History->resize(775, 480);
         History->setStyleSheet(QStringLiteral("background-color: rgb(11, 58, 151);"));
-        label = new QLabel(History);
-        label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(30, 30, 61, 31));
-        label_2 = new QLabel(History);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(160, 30, 41, 31));
-        label_3 = new QLabel(History);
-        label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(290, 30, 71, 31));
-        listWidget = new QListWidget(History);
-        listWidget->setObjectName(QStringLiteral("listWidget"));
-        listWidget->setGeometry(QRect(20, 70, 101, 131));
-        listWidget_2 = new QListWidget(History);
-        listWidget_2->setObjectName(QStringLiteral("listWidget_2"));
-        listWidget_2->setGeometry(QRect(160, 70, 91, 131));
-        listWidget_3 = new QListWidget(History);
-        listWidget_3->setObjectName(QStringLiteral("listWidget_3"));
-        listWidget_3->setGeometry(QRect(290, 70, 101, 131));
+        verticalLayout = new QVBoxLayout(History);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        tableHistory = new QTableView(History);
+        tableHistory->setObjectName(QStringLiteral("tableHistory"));
+        tableHistory->setStyleSheet(QLatin1String("background-color: rgb(0, 0, 0);\n"
+"color: rgb(0, 255, 0);\n"
+"font: 75 14pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout->addWidget(tableHistory);
+
+        pushButton_27 = new QPushButton(History);
+        pushButton_27->setObjectName(QStringLiteral("pushButton_27"));
+        pushButton_27->setStyleSheet(QLatin1String("background-color: rgb(238, 0, 104);\n"
+"color: rgb(247, 222, 246);font: 75 14pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout->addWidget(pushButton_27);
+
 
         retranslateUi(History);
 
@@ -63,9 +60,7 @@ public:
     void retranslateUi(QDialog *History)
     {
         History->setWindowTitle(QApplication::translate("History", "Dialog", nullptr));
-        label->setText(QApplication::translate("History", "Address of ATM", nullptr));
-        label_2->setText(QApplication::translate("History", "Time", nullptr));
-        label_3->setText(QApplication::translate("History", "Amount of Money", nullptr));
+        pushButton_27->setText(QApplication::translate("History", "Return", nullptr));
     } // retranslateUi
 
 };

@@ -5,6 +5,10 @@
 #include "useratm.h"
 #include "getcash.h"
 #include "history.h"
+#include "mainwindow.h"
+class GetCash;
+class MainWindow;
+class SendCashUser;
 namespace Ui {
 class OperationWindow;
 }
@@ -25,11 +29,17 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_pushButton_6_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::OperationWindow *ui;
     UserATM _user;
     GetCash *gc;
     History *h;
+    MainWindow *_mw;
+    SendCashUser *_scu;
 
 };
 

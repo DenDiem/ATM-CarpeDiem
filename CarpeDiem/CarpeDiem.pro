@@ -35,7 +35,10 @@ SOURCES += \
     getcash.cpp \
     history.cpp \
     sendcash.cpp \
-    result.cpp
+    nomoney.cpp \
+    getresult.cpp \
+    sendcashuser.cpp \
+    resultsend.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -48,7 +51,10 @@ HEADERS += \
     getcash.h \
     history.h \
     sendcash.h \
-    result.h
+    nomoney.h \
+    getresult.h \
+    sendcashuser.h \
+    resultsend.h
 
 FORMS += \
         mainwindow.ui \
@@ -57,7 +63,10 @@ FORMS += \
     getcash.ui \
     history.ui \
     sendcash.ui \
-    result.ui
+    nomoney.ui \
+    getresult.ui \
+    sendcashuser.ui \
+    resultsend.ui
 
 win32: LIBS += -L$$PWD/'../../../../../Program Files/MySQL/MySQL Connector C 6.1/lib/' -llibmysql
 
@@ -72,4 +81,7 @@ INCLUDEPATH += $$PWD/'../../../../../Program Files/MySQL/MySQL Connector C 6.1/l
 DEPENDPATH += $$PWD/'../../../../../Program Files/MySQL/MySQL Connector C 6.1/lib/vs14'
 
 RESOURCES += \
-    src.qrc
+    imgatm.qrc
+
+DISTFILES += \
+    cd.qmodel

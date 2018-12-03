@@ -32,6 +32,8 @@ class CarpeDiemATM
 
         static CarpeDiemATM currentATM;
 
+
+
 };
 
 #endif // CARPEDIEMATM_H
