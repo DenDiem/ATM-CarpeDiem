@@ -4,12 +4,14 @@
 #include "mainwindow.h"
 #include "operationwindow.h"
 #include "sendcash.h"
+#include "datebase.h"
 SendCashUser::SendCashUser(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::SendCashUser),
     _op(0),
     _sc(0)
 {
+    DateBase::myDate.open();
     ui->setupUi(this);
     ui->eCard->setInputMask("9999-9999-9999-9999");
 }

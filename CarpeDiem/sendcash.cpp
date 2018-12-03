@@ -4,6 +4,7 @@
 #include "carpediematm.h"
 #include "resultsend.h"
 #include "operationwindow.h"
+#include "datebase.h"
 sendCash::sendCash(QWidget *parent, const UserATM& ua) :
     QDialog(parent),
     ui(new Ui::sendCash),
@@ -11,6 +12,7 @@ sendCash::sendCash(QWidget *parent, const UserATM& ua) :
     _ua(ua),
     _rs(0)
 {
+    DateBase::myDate.open();
     ui->setupUi(this);
     ui->lError->setText("commission 1 percent");
 

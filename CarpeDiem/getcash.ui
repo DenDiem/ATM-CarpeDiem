@@ -293,7 +293,7 @@ color: rgb(0, 255, 0);
 font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
      <property name="text">
-      <string/>
+      <string>Must be &gt;0 and &lt;=4000</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

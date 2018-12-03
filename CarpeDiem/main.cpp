@@ -5,10 +5,13 @@
 #include <QtSql>
 #include "datebase.h"
 int main(int argc, char *argv[])
-{
+{DateBase::myDate.open();
    QApplication a(argc, argv);
+
+
      MainWindow w;
     w.show();
+
 
 
 

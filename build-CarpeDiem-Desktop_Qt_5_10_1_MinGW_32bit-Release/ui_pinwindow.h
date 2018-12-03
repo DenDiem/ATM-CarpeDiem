@@ -56,7 +56,7 @@ public:
     {
         if (PinWindow->objectName().isEmpty())
             PinWindow->setObjectName(QStringLiteral("PinWindow"));
-        PinWindow->resize(853, 480);
+        PinWindow->resize(859, 480);
         PinWindow->setStyleSheet(QStringLiteral("background-color: rgb(11, 58, 151);"));
         gridLayout_2 = new QGridLayout(PinWindow);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
@@ -181,16 +181,16 @@ public:
         sizePolicy2.setVerticalStretch(0);
         sizePolicy2.setHeightForWidth(bPass->sizePolicy().hasHeightForWidth());
         bPass->setSizePolicy(sizePolicy2);
-        bPass->setStyleSheet(QLatin1String("color: rgb(255, 0, 0);\n"
-"background-color: rgb(255, 255, 255);\n"
+        bPass->setStyleSheet(QLatin1String("color: rgb(130, 18, 119);\n"
+"background-color: rgb(97, 242, 255);\n"
 "font: 75 18pt \"MS Shell Dlg 2\";"));
 
         gridLayout->addWidget(bPass, 2, 3, 2, 1);
 
         pushButton = new QPushButton(groupBox_2);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setStyleSheet(QLatin1String("color: rgb(255, 0, 0);\n"
-"background-color: rgb(255, 255, 255);\n"
+        pushButton->setStyleSheet(QLatin1String("color: rgb(130, 18, 119);\n"
+"background-color: rgb(97, 242, 255);\n"
 "font: 75 18pt \"MS Shell Dlg 2\";"));
 
         gridLayout->addWidget(pushButton, 4, 3, 1, 1);

@@ -1,6 +1,7 @@
 #include "operationwindow.h"
 #include "ui_operationwindow.h"
 #include "mainwindow.h"
+#include "datebase.h"
 #include "sendcashuser.h"
 OperationWindow::OperationWindow(QWidget *parent,const UserATM& user) :
     QDialog(parent),
@@ -11,6 +12,8 @@ OperationWindow::OperationWindow(QWidget *parent,const UserATM& user) :
     _scu(0)
 {
     ui->setupUi(this);
+    //DateBase::myDate.close();
+   // DateBase::myDate myDate;
     if(user.creditLim()>user.currentCash())
         ui->lBalance->setStyleSheet("font: 75 18pt \"MS Shell Dlg 2\";color:red");
     ui->lBalance->setText(QString::number(user.currentCash()));
@@ -19,6 +22,9 @@ OperationWindow::OperationWindow(QWidget *parent,const UserATM& user) :
     qDebug(_user.clientName().toLatin1());
     UserATM::currentUser.attempts()=0;
     UserATM::currentUser.avalible()=1;
+
+    DateBase::myDate.open();
+
 }
 
 OperationWindow::~OperationWindow()

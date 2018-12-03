@@ -8,17 +8,17 @@ DateBase::DateBase(const QString &type, const QString &host, const QString &name
     _user(user),
     _pass(pass)
 {
-
-    QSqlDatabase db = QSqlDatabase::addDatabase(type);
-        db.setHostName(host);
-        db.setDatabaseName(name);
-        db.setUserName(user);
-        db.setPassword(pass);
+    QSqlDatabase db = QSqlDatabase::addDatabase(_type);
+        db.setHostName(_host);
+        db.setDatabaseName(_name);
+        db.setUserName(_user);
+        db.setPassword(_pass);
         if(!db.open()){
             qDebug("db.lastError().text()");
         }else{
             qDebug("Succesfull");
         }
+
 
 }
 
@@ -27,7 +27,7 @@ DateBase::~DateBase()
 
 }
 
-\
+
 void DateBase::close()
 {
     if(!db.open()){
@@ -36,4 +36,16 @@ void DateBase::close()
         db.close();
         qDebug("close");
     }
+}
+void DateBase::open(){
+    QSqlDatabase db = QSqlDatabase::addDatabase(_type);
+        db.setHostName(_host);
+        db.setDatabaseName(_name);
+        db.setUserName(_user);
+        db.setPassword(_pass);
+        if(!db.open()){
+            qDebug("db.lastError().text()");
+        }else{
+            qDebug("Succesfull");
+        }
 }

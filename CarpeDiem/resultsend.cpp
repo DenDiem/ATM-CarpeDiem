@@ -1,11 +1,13 @@
 #include "resultsend.h"
 #include "ui_resultsend.h"
 #include "operationwindow.h"
+#include "datebase.h"
 ResultSend::ResultSend(QWidget *parent, unsigned cs) :
     QDialog(parent),
     ui(new Ui::ResultSend),
   _op(0)
 {
+    DateBase::myDate.open();
     ui->setupUi(this);
     ui->lSender->setText("-"+QString::number(cs));
     ui->lReceiver->setText("+"+QString::number(cs*0.99));

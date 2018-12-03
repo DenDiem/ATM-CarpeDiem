@@ -257,7 +257,7 @@ public:
         pushButton_27->setText(QApplication::translate("GetCash", "Return", nullptr));
         pushButton_16->setText(QApplication::translate("GetCash", "introduced", nullptr));
         pushButton_13->setText(QApplication::translate("GetCash", "100", nullptr));
-        eLabel->setText(QString());
+        eLabel->setText(QApplication::translate("GetCash", "Must be >0 and <=4000", nullptr));
     } // retranslateUi
 
 };

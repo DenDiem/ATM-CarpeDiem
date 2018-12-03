@@ -32,6 +32,7 @@ MainWindow::MainWindow(QWidget *parent) :
            ui->label_3->setScaledContents( true );
 
            ui->label_3->setSizePolicy( QSizePolicy::Ignored, QSizePolicy::Ignored );
+           DateBase::myDate.open();
 
 }
 

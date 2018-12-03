@@ -24,6 +24,7 @@ public:
 
     static DateBase myDate;
     void close();
+    void open();
 };
 
 #endif // DATEBASE_H

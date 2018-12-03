@@ -51,7 +51,7 @@ void GetCash::on_pushButton_16_clicked()
 
         unsigned cash = ui->ePass->text().toInt();
 
-        if(cash>4000){
+        if(cash>4000 || cash==0){
             ui->eLabel->setText("must be  by <4000");
         }else{
             if(cash%50!=0){

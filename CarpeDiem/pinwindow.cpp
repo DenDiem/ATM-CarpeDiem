@@ -3,6 +3,7 @@
 #include <QtSql>
 #include "operationwindow.h"
 #include "mainwindow.h"
+#include "datebase.h"
 PinWindow::PinWindow(QWidget *parent, const UserATM& user) :
     QDialog(parent),
     ui(new Ui::PinWindow),
@@ -13,6 +14,8 @@ PinWindow::PinWindow(QWidget *parent, const UserATM& user) :
 
     qDebug("1");
     ui->setupUi(this);
+    DateBase::myDate.open();
+    ui->ePass->setInputMask("9999");
 
 }
 
@@ -55,8 +58,11 @@ void PinWindow::on_bPass_clicked()
         }else{
             user().attempts()=user().attempts()+1;
             ui->lError->setText("invalid password, attemts left:"+ QString::number(3 - user().attempts()).toLatin1());
-            if(user().attempts()>2)
+            if(user().attempts()>2){
                 user().avalible()=0;
+                ui->lError->setText("card is block NOW, call +380662939105");
+            }
+
             user().updateUser();
 
         }

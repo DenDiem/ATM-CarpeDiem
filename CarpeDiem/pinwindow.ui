@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>853</width>
+    <width>859</width>
     <height>480</height>
    </rect>
   </property>
@@ -201,8 +201,8 @@ color: rgb(247, 222, 246);</string>
          </sizepolicy>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(255, 0, 0);
-background-color: rgb(255, 255, 255);
+         <string notr="true">color: rgb(130, 18, 119);
+background-color: rgb(97, 242, 255);
 font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
         <property name="text">
@@ -213,8 +213,8 @@ font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
       <item row="4" column="3">
        <widget class="QPushButton" name="pushButton">
         <property name="styleSheet">
-         <string notr="true">color: rgb(255, 0, 0);
-background-color: rgb(255, 255, 255);
+         <string notr="true">color: rgb(130, 18, 119);
+background-color: rgb(97, 242, 255);
 font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
         <property name="text">
